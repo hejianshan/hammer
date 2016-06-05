@@ -9,5 +9,5 @@
  */
 angular.module('stockDogApp')
   .service('CompanyService', function CompanyService($resource) {
-    return $resource('/companies.json');
+    return $resource('/hammer/companies.json');
   });

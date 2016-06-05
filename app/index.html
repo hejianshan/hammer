@@ -31,13 +31,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Stock Dog</a>
+          <a class="navbar-brand" href="/hammer/#/dashboard">Stock Dog</a>
         </div>
 
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="nav navbar-nav navbar-right">
             <li ng-class="{active: activeView === 'dashboard'}">
-              <a href="/">Dashboard</a>
+              <a href="/hammer/#/dashboard">Dashboard</a>
             </li>
             <li ng-class="{active: activeView === 'watchlist'}"
               class="dropdown">
@@ -49,7 +49,7 @@
                   No lists found
                 </li>
                 <li ng-repeat="list in watchlists track by $index">
-                  <a href="/#/watchlist/{{list.id}}">{{list.name}}</a>
+                  <a href="/hammer/#/watchlist/{{list.id}}">{{list.name}}</a>
                 </li>
               </ul>
             </li>
